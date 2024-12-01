@@ -1,40 +1,14 @@
 import Image from "next/image";
-import Link from "next/link";
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarCollapse,
-  NavbarLink,
-  NavbarToggle,
-} from "flowbite-react";
+import TopMenu from "../component/topmenu";
+import BannerMainPage from "../component/banner";
+
 
 export default async function Home() {
   return (
     <>
-      <header className="z-50  ">
-        
-        <Navbar fluid rounded className="h-auto">
-          <NavbarBrand as={Link} href="https://flowbite-react.com">
-            <span className="-mt-5">
-            <Image src="/assets/logo.png" alt="logo" width={200} height={150} />
-            </span>
-          </NavbarBrand>
-          <NavbarToggle />
-          <NavbarCollapse>
-            <NavbarLink href="#" active>
-              Home
-            </NavbarLink>
-            <NavbarLink as={Link} href="#">
-              About
-            </NavbarLink>
-            <NavbarLink href="#">Services</NavbarLink>
-            <NavbarLink href="#">Pricing</NavbarLink>
-            <NavbarLink href="#">Contact</NavbarLink>
-          </NavbarCollapse>
-        </Navbar>
-      </header>
+      <TopMenu/>
 
-      <section className="h-screen flex bg-black opacity-55"></section>
+      <BannerMainPage/>
 
       <section className="flex bg-[#fefefe] py-10 ">
         <div className="container grid grid-cols-2 ">
@@ -65,9 +39,7 @@ export default async function Home() {
       </section>
 
       <section className="flex     bg-yellow-100">
-        <div className="h-40 bg-yellow-300" >
-
-        </div>
+        <div className="h-40 bg-yellow-300"></div>
       </section>
 
       {/* <section className="w-full border-t-8  py-10  bg-[#eae7e2] h-auto ">
