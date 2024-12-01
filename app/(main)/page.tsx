@@ -12,10 +12,11 @@ export default async function Home() {
   return (
     <>
       <header className="z-50  ">
-        <Navbar fluid rounded className="h-20 p-10 ">
+        
+        <Navbar fluid rounded className="h-auto">
           <NavbarBrand as={Link} href="https://flowbite-react.com">
-            <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-              Nopheh Group
+            <span className="-mt-5">
+            <Image src="/assets/logo.png" alt="logo" width={200} height={150} />
             </span>
           </NavbarBrand>
           <NavbarToggle />
