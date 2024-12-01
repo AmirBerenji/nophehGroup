@@ -2,20 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+[type='password'] {
+    border-left-width: 0px !important;
+    border-right-width: 0px !important;
+    border-top-width: 0px !important;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+[type='password']:focus {
+    --tw-ring-offset-width :-2px !important
+}
+[type='email'] {
+    border-left-width: 0px !important;
+    border-right-width: 0px !important;
+    border-top-width: 0px !important;
+}
+[type='email']:focus {
+    --tw-ring-offset-width :-2px !important
+}
+[type='date'] {
+    border-left-width: 0px !important;
+    border-right-width: 0px !important;
+    border-top-width: 0px !important;
+}
+[type='date']:focus {
+    --tw-ring-offset-width :-2px !important
+}
+select{
+    border-left-width: 0px !important;
+    border-right-width: 0px !important;
+    border-top-width: 0px !important;
+}
+select:focus{
+    --tw-ring-offset-width :-2px !important
+}
+textarea{
+    border-left-width: 0px !important;
+    border-right-width: 0px !important;
+    border-top-width: 0px !important;
+}
+textarea:focus{
+    --tw-ring-offset-width :-2px !important
 }
