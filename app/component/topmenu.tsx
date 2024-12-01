@@ -10,20 +10,28 @@ import {
 
 export default function TopMenu() {
   return (
-    <header className="z-50  ">
-    <Navbar fluid rounded className="h-auto">
-      <NavbarBrand as={Link} href="https://flowbite-react.com">
-        <span className="pl-40">
-          <Image
-            src="/assets/logo.png"
-            alt="logo"
-            width={200}
-            height={150}
-          />
-        </span>
-      </NavbarBrand>
-      <NavbarToggle />
-      <NavbarCollapse className="pr-24">
+
+<header className="z-50">
+  <Navbar fluid={true} rounded={true} className="h-auto">
+    {/* Brand Logo */}
+    <NavbarBrand as={Link} href="#">
+      <div className="flex items-center pl-4 md:pl-10">
+        <Image
+          src="/assets/logo.png"
+          alt="logo"
+          width={150}
+          height={100}
+          className="w-auto h-auto"
+        />
+      </div>
+    </NavbarBrand>
+
+    {/* Navbar Toggle */}
+    <NavbarToggle />
+
+    {/* Navbar Links */}
+    <NavbarCollapse className="pr-4 md:pr-10">
+      <div className="flex flex-col md:flex-row md:gap-8 text-center md:text-left">
         <NavbarLink href="#" active>
           Home
         </NavbarLink>
@@ -33,8 +41,12 @@ export default function TopMenu() {
         <NavbarLink href="#">Services</NavbarLink>
         <NavbarLink href="#">Pricing</NavbarLink>
         <NavbarLink href="#">Contact</NavbarLink>
-      </NavbarCollapse>
-    </Navbar>
-  </header>
+      </div>
+    </NavbarCollapse>
+  </Navbar>
+</header>
+
+
+
   )
 }
