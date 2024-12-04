@@ -12,7 +12,7 @@ export default function TopMenu() {
   return (
 
 <header className="z-50">
-  <Navbar fluid={true} rounded={true} className="h-auto">
+  <Navbar fluid={true} rounded={false} className="h-auto">
     {/* Brand Logo */}
     <NavbarBrand as={Link} href="#">
       <div className="flex items-center pl-4 md:pl-10">
@@ -35,11 +35,10 @@ export default function TopMenu() {
         <NavbarLink href="#" active>
           Home
         </NavbarLink>
-        <NavbarLink as={Link} href="#">
+        <NavbarLink as={Link} href="#about">
           About
         </NavbarLink>
-        <NavbarLink href="#">Services</NavbarLink>
-        <NavbarLink href="#">Pricing</NavbarLink>
+        <NavbarLink href="#service">Services</NavbarLink>
         <NavbarLink href="#">Contact</NavbarLink>
       </div>
     </NavbarCollapse>
