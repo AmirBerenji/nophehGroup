@@ -1,26 +1,33 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Card() {
   return (
-    <section className="bg-gray-200 grid md:grid-cols-3 grid-cols-1 gap-7 p-9" id="service">
+    <section
+      className="bg-gray-200 grid md:grid-cols-3 grid-cols-1 gap-7 p-9"
+      id="service"
+    >
       {[
         {
           img: "/assets/brandphotography.jpeg",
           title: "Brand photography",
           description:
             "Transform your brand with stunning visuals that tell your story.",
+          linke: "/photography",
         },
         {
           img: "/assets/socialmedia.jpeg",
           title: "Social media content creation",
           description:
             "Engage your audience with visually striking social media content.",
+          linke: "/socialmedia",
         },
         {
           img: "/assets/marketing.jpeg",
           title: "Marketing strategy",
           description:
             "Unlock your brand's potential with tailored marketing strategies.",
+          linke: "/marketing",
         },
       ].map((item, index) => (
         <div key={index} className="flex justify-center items-center w-full">
@@ -36,7 +43,9 @@ export default function Card() {
               />
             </div>
             <div className="p-5">
-              <h1 className="text-2xl font-bold">{item.title}</h1>
+              <Link href={item.linke}>
+                <h1 className="text-2xl font-bold">{item.title}</h1>
+              </Link>
               <p className="text-gray-600">{item.description}</p>
             </div>
           </div>
