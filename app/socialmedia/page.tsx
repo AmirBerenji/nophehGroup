@@ -22,7 +22,7 @@ export default function SocialMediaPage() {
             <h2 className="font-bold text-xl sm:text-2xl lg:text-3xl mb-5 text-center lg:text-left">
               Social media content creation
             </h2>
-            <p className="text-sm sm:text-base text-center lg:text-left leading-relaxed">
+            <p className="text-sm sm:text-base text-justify lg:text-justify leading-relaxed">
               Elevate your social media presence with dynamic content that
               captures attention and drives engagement. Our team crafts visually
               striking images and videos tailored for platforms like Instagram,

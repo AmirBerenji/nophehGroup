@@ -22,7 +22,7 @@ export default function PhotographyPage() {
             <h2 className="font-bold text-xl sm:text-2xl lg:text-3xl mb-5 text-center lg:text-left">
               Brand Photography
             </h2>
-            <p className="text-sm sm:text-base text-center lg:text-left leading-relaxed">
+            <p className="text-sm sm:text-base text-justify lg:text-justify leading-relaxed">
               Create a lasting impression with captivating brand photography
               that resonates with your audience. Our expert photographers
               specialize in capturing the essence of your brand, highlighting
