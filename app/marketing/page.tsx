@@ -22,7 +22,7 @@ export default function MarketinPage() {
             <h2 className="font-bold text-xl sm:text-2xl lg:text-3xl mb-5 text-center lg:text-left">
               Marketing strategy consultation
             </h2>
-            <p className="text-sm sm:text-base text-center lg:text-left leading-relaxed">
+            <p className="text-sm sm:text-base lg:text-justifyd leading-relaxed text-justify">
               Navigate the competitive landscape with confidence through our
               comprehensive marketing strategy consultation. We analyze your
               brand’s strengths and weaknesses, providing insights that lead to
