@@ -2,15 +2,15 @@ import Image from "next/image";
 
 export default function Description() {
   return (
-    <section className="flex bg-[#fefefe] py-10" id="about">
+    <section className="flex bg-[#fefefe] py-10 text-[#023047] " id="about ">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-10">
         {/* Text Content */}
         <div className="p-4 md:p-10 flex flex-col justify-center">
-          <h2 className="font-bold text-xl md:text-2xl text-gray-800">
+          <h2 className="font-bold text-xl md:text-2xl ">
             Captivate your audience
           </h2>
-          <p className="text-justify text-base md:text-lg mt-4 text-gray-700">
-            Nopheh, based in Yerevan, AM, transforms brands through powerful
+          <p className="text-justify text-base md:text-lg mt-4 ">
+            Nofeh, based in Yerevan, AM, transforms brands through powerful
             imagery and strategic marketing. Our professional photography
             services showcase your unique story, while our tailored marketing
             strategies ensure your message resonates with your target audience.
