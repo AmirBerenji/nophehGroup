@@ -26,11 +26,8 @@ export default function Card() {
     },
   ];
   return (
-    <section
-      className="bg-gray-200  w-full"
-      id="service"
-    >
-      <div className="grid md:grid-cols-3 grid-cols-1  gap-1 px-20 py-10" >
+    <section className="bg-gray-200  w-full" id="service">
+      <div className="grid md:grid-cols-3 grid-cols-1  gap-1 px-6 xl:px-20 md:px-20   py-14">
         {data.map((item, index) => (
           <Link
             href={item.linke}
