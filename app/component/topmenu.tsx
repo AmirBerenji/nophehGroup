@@ -38,7 +38,7 @@ export default function TopMenu() {
               About
             </NavbarLink>
             <NavbarLink href="#service">Services</NavbarLink>
-            <NavbarLink href="#">Contact</NavbarLink>
+            <NavbarLink href="#contactus">Contact</NavbarLink>
           </div>
         </NavbarCollapse>
       </Navbar>

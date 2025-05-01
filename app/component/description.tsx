@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Description() {
   return (
-    <section className="flex bg-[#fefefe] py-10 text-[#023047] " id="about ">
+    <section className="flex bg-[#fefefe] py-10 text-[#023047] " id="about">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-10">
         {/* Text Content */}
         <div className="p-4 md:p-10 flex flex-col justify-center">

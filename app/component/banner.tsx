@@ -6,7 +6,7 @@ export default function BannerMainPage() {
           <span className=" text-4xl md:text-6xl lg:text-7xl  text-[#023047]">
             NOFEH
           </span>
-          <span className=" text-xl md:text-2xl lg:text-4xl text-[#fc8500]">
+          <span className="ml-3 text-xl md:text-2xl lg:text-4xl text-[#fc8500]">
             Code Studio
           </span>
         </h2>
