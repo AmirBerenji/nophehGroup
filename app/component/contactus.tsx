@@ -21,7 +21,7 @@ export default function ContactUs() {
             </p>
             <p className="text-gray-600 text-lg leading-relaxed">
               Our team is passionate about turning your ideas into visual
-              stories. Drop us a message or visit us at our studio in Madrid.
+              stories. Drop us a message or visit us at our studio in Armenia.
             </p>
           </div>
 
@@ -39,7 +39,11 @@ export default function ContactUs() {
             </div>
             <div>
               <h3 className="font-semibold text-gray-800 mb-1">✉️ Email</h3>
-              <p>nofehcodestudio@gmail.com</p>
+              <p>
+                <a href="mailto:nofehcodestudio@gmail.com">
+                  nofehcodestudio@gmail.com
+                </a>
+              </p>
             </div>
             <div>
               <h3 className="font-semibold text-gray-800 mb-1">
