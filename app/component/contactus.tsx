@@ -27,17 +27,19 @@ export default function ContactUs() {
 
           {/* Right Column - Contact Info */}
           <div className="space-y-6 text-gray-700 text-lg md:pl-20 lg:pl-20 xl:pl-20">
-            <div>
+            {/* <div>
               <h3 className="font-semibold text-gray-800 mb-1">📍 Address</h3>
               <p>Armenia, Yerevan, Davetashen 1th, 27/12</p>
-            </div>
+            </div> */}
             <div>
               <h3 className="font-semibold text-gray-800 mb-1">📞 Phone</h3>
-              <p>+374 95 802 393</p>
+              <p>
+                <a href="tel:+37495802393">+374 95 838 831</a>
+              </p>
             </div>
             <div>
               <h3 className="font-semibold text-gray-800 mb-1">✉️ Email</h3>
-              <p>info@nofehstudio.com</p>
+              <p>nofehcodestudio@gmail.com</p>
             </div>
             <div>
               <h3 className="font-semibold text-gray-800 mb-1">
