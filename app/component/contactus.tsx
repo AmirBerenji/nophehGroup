@@ -34,7 +34,7 @@ export default function ContactUs() {
             <div>
               <h3 className="font-semibold text-gray-800 mb-1">📞 Phone</h3>
               <p>
-                <a href="tel:+37495802393">+374 95 838 831</a>
+                <a href="tel:+37495838831">+374 95 838 831</a>
               </p>
             </div>
             <div>
