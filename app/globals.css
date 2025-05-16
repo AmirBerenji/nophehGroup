@@ -43,3 +43,7 @@ textarea{
 textarea:focus{
     --tw-ring-offset-width :-2px !important
 }
+
+html {
+  scroll-behavior: smooth;
+}
