@@ -32,7 +32,7 @@ export default function Card() {
           <Link
             href={item.linke}
             key={index}
-            className="hover:scale-110 transition-transform duration-300 ease-in-out"
+            className=" hover:scale-110 transition-transform duration-300 ease-in-out z-[0]"
           >
             <div className="flex justify-center items-center w-full">
               <div className="w-full max-w-sm h-auto bg-slate-50 border rounded-lg shadow-md">
@@ -47,9 +47,9 @@ export default function Card() {
                   />
                 </div>
                 <div className="p-5">
-                  <h1 className="text-2xl font-bold">{item.title}</h1>
+                  <h1 className="text-[#023047] text-2xl font-bold">{item.title}</h1>
 
-                  <p className="text-gray-600">{item.description}</p>
+                  <p className="text-[#023047]">{item.description}</p>
                 </div>
               </div>
             </div>
