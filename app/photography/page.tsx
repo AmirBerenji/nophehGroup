@@ -8,7 +8,7 @@ export default function PhotographyPage() {
           {/* Image Section */}
           <div className="flex justify-center lg:justify-end">
             <Image
-              src="/assets/brandphotography.jpeg"
+              src="/assets/brandphotography.jpg"
               alt="Photography"
               className="w-full max-w-xs sm:max-w-md lg:max-w-lg h-auto object-cover rounded-lg"
               width={0}
