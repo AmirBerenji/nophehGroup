@@ -23,8 +23,8 @@ export default function SocialMediaPage() {
               Website and App Design
             </h2>
             <p className="text-sm sm:text-base text-justify lg:text-justify leading-relaxed">
-              In today's digital landscape, a compelling online presence is
-              essential for business success. Our website and app design
+              In today`&apos`s digital landscape, a compelling online presence
+              is essential for business success. Our website and app design
               services focus on creating visually stunning and user-friendly
               interfaces that captivate your audience and drive engagement. We
               blend creativity with functionality, ensuring that every design

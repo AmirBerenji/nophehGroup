@@ -1,7 +1,7 @@
 export default function Card() {
   const data = [
     {
-      img: "assets/brandphotography.jpg?w=800&h=600&fit=crop",
+      img: "/assets/brandphotography.jpg?w=800&h=600&fit=crop",
       title: "Brand photography",
       description:
         "Transform your brand with stunning visuals that tell your story.",
@@ -10,7 +10,7 @@ export default function Card() {
       accent: "bg-[#209EBB]",
     },
     {
-      img: "assets/websitedesign.jpg?w=800&h=600&fit=crop",
+      img: "/assets/websitedesign.jpg?w=800&h=600&fit=crop",
       title: "Website and app design",
       description: "website and app design that captivates and converts.",
       linke: "/webdesign",
@@ -18,7 +18,7 @@ export default function Card() {
       accent: "bg-green-400",
     },
     {
-      img: "assets/marketing.jpg?w=800&h=600&fit=crop",
+      img: "/assets/marketing.jpg?w=800&h=600&fit=crop",
       title: "Marketing strategy",
       description:
         "Unlock your brand's potential with tailored marketing strategies.",
