@@ -27,7 +27,7 @@ export default function Description() {
             alt="Hero1"
             width={500}
             height={500}
-            className="w-3/5 h-auto max-w-sm md:max-w-md lg:max-w-lg rounded-2xl "
+            className=" w-full md:w-3/5 h-auto max-w-sm md:max-w-md lg:max-w-lg rounded-2xl "
           />
         </div>
       </div>
