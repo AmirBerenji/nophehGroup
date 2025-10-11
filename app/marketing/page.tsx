@@ -8,7 +8,7 @@ export default function MarketinPage() {
           {/* Image Section */}
           <div className="flex justify-center lg:justify-end">
             <Image
-              src="/assets/marketing.jpeg"
+              src="/assets/marketing.jpg"
               alt="Photography"
               className="w-full max-w-xs sm:max-w-md lg:max-w-lg h-auto object-cover rounded-lg"
               width={0}

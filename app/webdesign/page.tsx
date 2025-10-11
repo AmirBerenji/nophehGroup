@@ -8,7 +8,7 @@ export default function SocialMediaPage() {
           {/* Image Section */}
           <div className="flex justify-center lg:justify-end">
             <Image
-              src="/assets/socialmedia.jpeg"
+              src="/assets/websitedesign.jpg"
               alt="Photography"
               className="w-full max-w-xs sm:max-w-md lg:max-w-lg h-96 object-cover object-center  rounded-lg"
               width={0}
@@ -20,19 +20,19 @@ export default function SocialMediaPage() {
           {/* Text Section */}
           <div>
             <h2 className="font-bold text-xl sm:text-2xl lg:text-3xl mb-5 text-center lg:text-left">
-              Social media content creation
+              Website and App Design
             </h2>
             <p className="text-sm sm:text-base text-justify lg:text-justify leading-relaxed">
-              Elevate your social media presence with dynamic content that
-              captures attention and drives engagement. Our team crafts visually
-              striking images and videos tailored for platforms like Instagram,
-              Facebook, and Twitter. By understanding your target audience and
-              brand voice, we create content that not only looks great but also
-              resonates with your followers. We handle everything from concept
-              development to final edits, ensuring your social media feeds are
-              as captivating as your brand. Connect, inspire, and grow your
-              audience with creative content that makes an impact. Let’s take
-              your social media strategy to the next level!
+              In today's digital landscape, a compelling online presence is
+              essential for business success. Our website and app design
+              services focus on creating visually stunning and user-friendly
+              interfaces that captivate your audience and drive engagement. We
+              blend creativity with functionality, ensuring that every design
+              element serves a purpose and enhances the overall user experience.
+              From intuitive navigation to responsive layouts, we tailor our
+              designs to meet your specific business goals and target audience.
+              Let us help you build a digital platform that not only looks great
+              but also converts visitors into loyal customers.
             </p>
           </div>
         </div>
