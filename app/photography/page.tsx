@@ -62,7 +62,7 @@ export default function PhotographyPage() {
                 <img
                   src="/assets/product.jpg"
                   alt="Photography Background"
-                  className="w-full h-full object-cover opacity-80"
+                  className="w-full h-full object-cover opacity-100"
                 />
               </div>
 
@@ -73,13 +73,13 @@ export default function PhotographyPage() {
                 </h3>
               </div>
             </div>
-            <div className="relative min-h-56 bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-8 hover:bg-opacity-20 transition-all duration-300 border border-white border-opacity-20 overflow-hidden">
+            <div className="relative min-h-80 bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-8 hover:bg-opacity-20 transition-all duration-300 border border-white border-opacity-20 overflow-hidden">
               {/* Background Image with Opacity */}
               <div className="absolute inset-0 rounded-lg overflow-hidden">
                 <img
                   src="/assets/property.jpg"
                   alt="Photography Background"
-                  className="w-full h-full object-cover opacity-80"
+                  className="w-full h-full object-cover opacity-100"
                 />
               </div>
 
@@ -91,13 +91,13 @@ export default function PhotographyPage() {
               </div>
             </div>
 
-            <div className="relative min-h-56 bg-white bg-opacity-40 backdrop-blur-sm rounded-lg p-8 hover:bg-opacity-20 transition-all duration-300 border border-white border-opacity-20 overflow-hidden">
+            <div className="relative min-h-80 bg-white bg-opacity-40 backdrop-blur-sm rounded-lg p-8 hover:bg-opacity-20 transition-all duration-300 border border-white border-opacity-20 overflow-hidden">
               {/* Background Image with Opacity */}
               <div className="absolute inset-0 rounded-lg overflow-hidden">
                 <img
                   src="/assets/events.jpg"
                   alt="Photography Background"
-                  className="w-full h-full object-cover opacity-80"
+                  className="w-full h-full object-cover opacity-100"
                 />
               </div>
 
