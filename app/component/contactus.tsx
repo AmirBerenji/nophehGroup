@@ -16,12 +16,14 @@ export default function ContactUs() {
             <p className="text-gray-600 text-lg leading-relaxed mb-4">
               At Nofeh, we&#39;re always here to help with your creative and
               business needs. Whether you&#39;re looking for photography,
-              videography, branding, or media consultation — don&#39;t hesitate
-              to connect with us.
+              videography, branding, media consultation, or professional
+              programming services such as website and mobile app design and
+              development .don&#39;t hesitate to connect with us.
             </p>
             <p className="text-gray-600 text-lg leading-relaxed">
-              Our team is passionate about turning your ideas into visual
-              stories. Drop us a message or visit us at our studio in Armenia.
+              Our team is passionate about turning your ideas into visual and
+              digital stories. Drop us a message or visit us at our studio in
+              Armenia.
             </p>
           </div>
 

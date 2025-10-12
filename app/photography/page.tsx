@@ -23,16 +23,14 @@ export default function PhotographyPage() {
               Brand Photography
             </h2>
             <p className="text-sm sm:text-base text-justify lg:text-justify leading-relaxed">
-              Create a lasting impression with captivating brand photography
-              that resonates with your audience. Our expert photographers
-              specialize in capturing the essence of your brand, highlighting
-              its unique personality and values. With a keen eye for detail and
-              a commitment to excellence, we ensure every image reflects your
-              brand’s identity. From lifestyle shoots to product showcases, we
-              tailor each session to meet your specific needs. Stand out in the
-              crowded marketplace and let your visuals do the talking.
-              Experience the power of professional photography and elevate your
-              brand&apos;s image today!
+              Make Your Brand Unforgettable with Professional Photography!
+              <br></br>
+              Our team specializes in brand, event, real estate, interior
+              design, food, and product photography. We capture the true essence
+              of your brand, creating images that build trust and attract
+              attention. From details to final composition, every photo reflects
+              your brand&apos;s quality and personality. Stand out with
+              professional visuals and leave a lasting impression.
             </p>
           </div>
         </div>
