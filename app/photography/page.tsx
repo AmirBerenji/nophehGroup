@@ -35,54 +35,78 @@ export default function PhotographyPage() {
       </section>
 
       {/* Services Section */}
-      <section className="relative py-20 sm:py-28 lg:py-36">
+      <section className="relative py-20 sm:py-28 lg:py-12">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
-          <img
+          {/* <img
             src="/assets/brandphotography.jpg"
             alt="Photography Background"
             className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gray-600 opacity-80"></div>
+          /> */}
+          <div className="absolute inset-0 bg-gray-200"></div>
         </div>
 
         {/* Content */}
-        <div className="relative z-10 max-w-6xl mx-auto px-6">
+        <div className="relative z-10 w-full mx-auto px-20 py-0">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
             {/* Product Photography */}
-            <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-8 hover:bg-opacity-20 transition-all duration-300 border border-white border-opacity-20">
-              <h3 className="text-2xl font-bold text-white mb-4 text-center">
-                Product Photography
-              </h3>
-              <p className="text-gray-200 text-justify leading-relaxed">
-                Showcase your products in the best light with high-quality
-                images that highlight every detail. Perfect for e-commerce,
-                catalogs, and marketing materials.
-              </p>
+
+            <div
+              className="relative min-h-80 bg-white 
+            bg-opacity-10 backdrop-blur-sm 
+            rounded-lg p-8 hover:bg-opacity-20 transition-all 
+            duration-300 border border-white border-opacity-20 overflow-hidden"
+            >
+              {/* Background Image with Opacity */}
+              <div className="absolute inset-0 rounded-lg overflow-hidden">
+                <img
+                  src="/assets/product.jpg"
+                  alt="Photography Background"
+                  className="w-full h-full object-cover opacity-80"
+                />
+              </div>
+
+              {/* Content */}
+              <div className="relative z-10 h-full flex items-end">
+                <h3 className="text-2xl font-bold text-white mb-4 text-center w-full">
+                  Product Photography
+                </h3>
+              </div>
+            </div>
+            <div className="relative min-h-56 bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-8 hover:bg-opacity-20 transition-all duration-300 border border-white border-opacity-20 overflow-hidden">
+              {/* Background Image with Opacity */}
+              <div className="absolute inset-0 rounded-lg overflow-hidden">
+                <img
+                  src="/assets/property.jpg"
+                  alt="Photography Background"
+                  className="w-full h-full object-cover opacity-80"
+                />
+              </div>
+
+              {/* Content */}
+              <div className="relative z-10 h-full flex items-end">
+                <h3 className="text-2xl font-bold text-white mb-4 text-center w-full">
+                  Product Photography
+                </h3>
+              </div>
             </div>
 
-            {/* Property Photography */}
-            <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-8 hover:bg-opacity-20 transition-all duration-300 border border-white border-opacity-20">
-              <h3 className="text-2xl font-bold text-white mb-4 text-center">
-                Property Photography
-              </h3>
-              <p className="text-gray-200 text-justify leading-relaxed">
-                Capture the beauty and potential of real estate with stunning
-                interior and exterior shots that help properties stand out and
-                sell faster.
-              </p>
-            </div>
+            <div className="relative min-h-56 bg-white bg-opacity-40 backdrop-blur-sm rounded-lg p-8 hover:bg-opacity-20 transition-all duration-300 border border-white border-opacity-20 overflow-hidden">
+              {/* Background Image with Opacity */}
+              <div className="absolute inset-0 rounded-lg overflow-hidden">
+                <img
+                  src="/assets/events.jpg"
+                  alt="Photography Background"
+                  className="w-full h-full object-cover opacity-80"
+                />
+              </div>
 
-            {/* Event Photography */}
-            <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-8 hover:bg-opacity-20 transition-all duration-300 border border-white border-opacity-20">
-              <h3 className="text-2xl font-bold text-white mb-4 text-center">
-                Event Photography
-              </h3>
-              <p className="text-gray-200 text-justify leading-relaxed">
-                Preserve unforgettable moments from your special events with
-                professional coverage that captures the emotion, energy, and
-                atmosphere.
-              </p>
+              {/* Content */}
+              <div className="relative z-10 h-full flex items-end">
+                <h3 className="text-2xl font-bold text-white mb-4 text-center w-full">
+                  Events Photography
+                </h3>
+              </div>
             </div>
           </div>
         </div>
