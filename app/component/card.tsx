@@ -12,7 +12,8 @@ export default function Card() {
     {
       img: "/assets/websitedesign.jpg?w=800&h=600&fit=crop",
       title: "Website and app design",
-      description: "website and app design that captivates and converts.",
+      description:
+        "Turning your vision into a website that’s as powerful as it is beautiful.",
       linke: "/webdesign",
       gradient: "from-green-400/20 to-green-400/20",
       accent: "bg-green-400",
