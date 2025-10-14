@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function Card() {
   const data = [
     {
@@ -55,13 +58,15 @@ export default function Card() {
         {/* Cards Grid */}
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
           {data.map((item, index) => (
-            <a href={item.linke} key={index} className="group">
+            <Link href={item.linke} key={index} className="group">
               <div className="relative h-full bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
                 {/* Image Container with Overlay */}
                 <div className="relative w-full h-64 overflow-hidden">
-                  <img
+                  <Image
                     src={item.img}
                     alt={item.title}
+                    width={800}
+                    height={600}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   {/* Gradient Overlay */}
@@ -107,7 +112,7 @@ export default function Card() {
                   <div className="mt-6 w-0 h-0.5 bg-gradient-to-r from-purple-500 via-blue-500 to-orange-500 group-hover:w-full transition-all duration-500"></div>
                 </div>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>
