@@ -6,7 +6,7 @@ export default function PhotographyPage() {
         <div className="w-full bg-slate-50 p-6 sm:p-12 lg:p-28">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto items-center">
             {/* Image Section */}
-            <div className="flex justify-center lg:justify-end">
+            <div className="flex justify-center lg:justify-end mt-20 lg:mt-0">
               <img
                 src="/assets/brandphotography.jpg"
                 alt="Photography"
@@ -47,14 +47,14 @@ export default function PhotographyPage() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 w-full mx-auto px-20 py-0">
+        <div className="relative z-10 w-full mx-auto px-8 lg:px-20 py-0">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
             {/* Product Photography */}
 
             <div
               className="relative min-h-80 bg-white 
             bg-opacity-10 backdrop-blur-sm 
-            rounded-lg p-8 hover:bg-opacity-20 transition-all 
+            rounded-lg p-1 hover:bg-opacity-20 transition-all 
             duration-300 border border-white border-opacity-20 overflow-hidden"
             >
               {/* Background Image with Opacity */}

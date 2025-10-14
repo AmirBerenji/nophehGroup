@@ -6,7 +6,7 @@ export default function SocialMediaPage() {
       <div className="w-full bg-slate-50 p-6 sm:p-12 lg:p-28">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto items-center">
           {/* Image Section */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:justify-end mt-20 lg:mt-0">
             <Image
               src="/assets/websitedesign.jpg"
               alt="Photography"
