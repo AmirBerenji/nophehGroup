@@ -59,7 +59,7 @@ export default function PhotographyPage() {
             rounded-lg p-8 hover:bg-opacity-20 transition-all 
             duration-300 border border-white border-opacity-20 overflow-hidden"
             >
-              <Link href="/photography/photography">
+              <Link href="/photography/product">
               {/* Background Image with Opacity */}
               <div className="absolute inset-0 rounded-lg overflow-hidden">
                 <img
@@ -103,7 +103,7 @@ export default function PhotographyPage() {
             
             
             <div className="relative min-h-80 bg-white bg-opacity-40 backdrop-blur-sm rounded-lg p-8 hover:bg-opacity-20 transition-all duration-300 border border-white border-opacity-20 overflow-hidden">
-             <Link href="/photography/events">
+             <Link href="/photography/event">
               {/* Background Image with Opacity */}
               <div className="absolute inset-0 rounded-lg overflow-hidden">
                 <img
