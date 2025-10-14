@@ -1,10 +1,10 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import { Clock, Mail, Rocket } from 'lucide-react';
+import { Clock, Rocket } from 'lucide-react';
 
 export default function Page() {
-  const [email, setEmail] = useState('');
-  const [subscribed, setSubscribed] = useState(false);
+ // const [email, setEmail] = useState('');
+ // const [subscribed, setSubscribed] = useState(false);
   const [timeLeft, setTimeLeft] = useState({
     days: 45,
     hours: 12,
@@ -42,15 +42,15 @@ export default function Page() {
     return () => clearInterval(timer);
   }, []);
 
-  const handleSubmit = () => {
-    if (email) {
-      setSubscribed(true);
-      setTimeout(() => {
-        setEmail('');
-        setSubscribed(false);
-      }, 3000);
-    }
-  };
+  // const handleSubmit = () => {
+  //   if (email) {
+  //     setSubscribed(true);
+  //     setTimeout(() => {
+  //       setEmail('');
+  //       setSubscribed(false);
+  //     }, 3000);
+  //   }
+ // };
 
   return (
     <div className="min-h-screen bg-white flex items-center justify-center p-4 relative overflow-hidden">
@@ -103,7 +103,7 @@ export default function Page() {
         </div>
 
         {/* Email subscription */}
-        <div className="max-w-md mx-auto">
+        {/* <div className="max-w-md mx-auto">
           <div className="bg-gray-50 rounded-2xl p-2 shadow-lg border border-gray-200">
             {!subscribed ? (
               <div className="flex flex-col sm:flex-row gap-2">
@@ -134,17 +134,17 @@ export default function Page() {
           <p className="text-gray-500 text-sm text-center mt-4">
             Be the first to know when we launch
           </p>
-        </div>
+        </div> */}
 
         {/* Social links or additional info */}
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <p className="text-gray-500 text-sm">
             Have questions? Contact us at{' '}
             <a href="mailto:info@example.com" className="text-purple-600 underline hover:text-pink-600 transition-colors">
               info@example.com
             </a>
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
