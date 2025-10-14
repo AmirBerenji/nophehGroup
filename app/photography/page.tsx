@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function PhotographyPage() {
   return (
     <>
@@ -50,7 +52,7 @@ export default function PhotographyPage() {
         <div className="relative z-10 w-full mx-auto px-8 lg:px-20 py-0">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
             {/* Product Photography */}
-
+            <Link href="/services/photography/product">
             <div
               className="relative min-h-80 bg-white 
             bg-opacity-10 backdrop-blur-sm 
@@ -61,7 +63,7 @@ export default function PhotographyPage() {
               <div className="absolute inset-0 rounded-lg overflow-hidden">
                 <img
                   src="/assets/product.jpg"
-                  alt="Photography Background"
+                  alt="Product Photography"
                   className="w-full h-full object-cover opacity-100"
                 />
               </div>
@@ -73,12 +75,14 @@ export default function PhotographyPage() {
                 </h3>
               </div>
             </div>
+            </Link>
+            <Link href="/services/photography/property">
             <div className="relative min-h-80 bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-8 hover:bg-opacity-20 transition-all duration-300 border border-white border-opacity-20 overflow-hidden">
               {/* Background Image with Opacity */}
               <div className="absolute inset-0 rounded-lg overflow-hidden">
                 <img
                   src="/assets/property.jpg"
-                  alt="Photography Background"
+                  alt="Property Photography"
                   className="w-full h-full object-cover opacity-100"
                 />
               </div>
@@ -86,17 +90,18 @@ export default function PhotographyPage() {
               {/* Content */}
               <div className="relative z-10 h-full flex items-end">
                 <h3 className="text-2xl font-bold text-white mb-4 text-center w-full">
-                  Product Photography
+                  Property Photography
                 </h3>
               </div>
             </div>
-
+            </Link>
+            <Link href="/services/photography/events">
             <div className="relative min-h-80 bg-white bg-opacity-40 backdrop-blur-sm rounded-lg p-8 hover:bg-opacity-20 transition-all duration-300 border border-white border-opacity-20 overflow-hidden">
               {/* Background Image with Opacity */}
               <div className="absolute inset-0 rounded-lg overflow-hidden">
                 <img
                   src="/assets/events.jpg"
-                  alt="Photography Background"
+                  alt="Events Photography"
                   className="w-full h-full object-cover opacity-100"
                 />
               </div>
@@ -108,6 +113,7 @@ export default function PhotographyPage() {
                 </h3>
               </div>
             </div>
+            </Link>
           </div>
         </div>
       </section>
