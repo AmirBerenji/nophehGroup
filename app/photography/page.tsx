@@ -52,13 +52,14 @@ export default function PhotographyPage() {
         <div className="relative z-10 w-full mx-auto px-8 lg:px-20 py-0">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
             {/* Product Photography */}
-            <Link href="/services/photography/product">
+            
             <div
               className="relative min-h-80 bg-white 
             bg-opacity-10 backdrop-blur-sm 
-            rounded-lg p-1 hover:bg-opacity-20 transition-all 
+            rounded-lg p-8 hover:bg-opacity-20 transition-all 
             duration-300 border border-white border-opacity-20 overflow-hidden"
             >
+              <Link href="/photography/photography">
               {/* Background Image with Opacity */}
               <div className="absolute inset-0 rounded-lg overflow-hidden">
                 <img
@@ -70,14 +71,17 @@ export default function PhotographyPage() {
 
               {/* Content */}
               <div className="relative z-10 h-full flex items-end">
-                <h3 className="text-2xl font-bold text-white mb-4 text-center w-full">
+                <h3 className="text-2xl font-bold text-white mb-4 text-center w-full ">
                   Product Photography
                 </h3>
               </div>
+              </Link>
             </div>
-            </Link>
-            <Link href="/services/photography/property">
+           
+            
             <div className="relative min-h-80 bg-white bg-opacity-10 backdrop-blur-sm rounded-lg p-8 hover:bg-opacity-20 transition-all duration-300 border border-white border-opacity-20 overflow-hidden">
+             
+             <Link href="/photography/property">
               {/* Background Image with Opacity */}
               <div className="absolute inset-0 rounded-lg overflow-hidden">
                 <img
@@ -93,10 +97,13 @@ export default function PhotographyPage() {
                   Property Photography
                 </h3>
               </div>
+              </Link>
             </div>
-            </Link>
-            <Link href="/services/photography/events">
+            
+            
+            
             <div className="relative min-h-80 bg-white bg-opacity-40 backdrop-blur-sm rounded-lg p-8 hover:bg-opacity-20 transition-all duration-300 border border-white border-opacity-20 overflow-hidden">
+             <Link href="/photography/events">
               {/* Background Image with Opacity */}
               <div className="absolute inset-0 rounded-lg overflow-hidden">
                 <img
@@ -112,8 +119,10 @@ export default function PhotographyPage() {
                   Events Photography
                 </h3>
               </div>
-            </div>
             </Link>
+            </div>
+            
+            
           </div>
         </div>
       </section>
