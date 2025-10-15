@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Clock, Rocket } from "lucide-react";
 
 export default function ComingSoonPage() {
-  // 🎯 Target launch date (October 15, 2025)
+
   const targetDate = new Date(2025, 9, 21); // month is 0-based (9 = October)
 
   const calculateTimeLeft = () => {
