@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="mb-4 sm:mb-0">
           <Image src="/assets/logo.png" alt="logo" width={50} height={50} />
         </div>
-        <FooterCopyright href="#" by="Nopheh Group" year={2024} />
+        <FooterCopyright href="/" by="Nofeh Code Studio" year={2025} />
       </div>
     </div>
   );
