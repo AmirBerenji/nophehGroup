@@ -57,7 +57,7 @@ export default function ContactUs() {
               <h3 className="font-semibold text-gray-800 mb-1">🌐 Follow Us</h3>
               <div className="flex gap-4 mt-2">
                 <a
-                  href="https://facebook.com/yourpage"
+                  href="https://www.facebook.com/share/1CoNkKtDE5/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-800 hover:text-blue-800 transition-colors"
@@ -65,17 +65,17 @@ export default function ContactUs() {
                   Facebook
                 </a>
                 <a
-                  href="https://instagram.com/yourprofile"
+                  href="https://www.instagram.com/nofeh_code_studio/"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="nofeh code studio instagram"
                   className="text-gray-800 hover:text-pink-800 transition-colors"
                 >
                   Instagram
                 </a>
                 <a
-                  href="https://linkedin.com/company/yourcompany"
+                  href="https://www.linkedin.com/in/nofeh-code-studio/"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="nofeh code studio linkedin"
                   className="text-gray-800 hover:text-blue-900 transition-colors"
                 >
                   LinkedIn

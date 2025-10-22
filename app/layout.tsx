@@ -105,6 +105,30 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="theme-color" content="#000000" />
+        <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        name: "Nofeh Code Studio",
+        url: "https://www.nofehcodestudio.com",
+        logo: "https://www.nofehcodestudio.com/logo.png",
+        sameAs: [
+          "https://www.facebook.com/share/1CoNkKtDE5/",
+          "https://www.instagram.com/nofeh_code_studio/",
+          "https://www.linkedin.com/in/nofeh-code-studio/",
+        ],
+        contactPoint: {
+          "@type": "ContactPoint",
+          telephone: "+37495838831",
+          contactType: "customer service",
+          areaServed: "AM",
+          availableLanguage: ["English", "Armenian", "Persian"],
+        },
+      }),
+    }}
+  />
       </head>
       <body>
         <TopMenu />
