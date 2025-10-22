@@ -1,5 +1,4 @@
 "use client"
-import { useState } from 'react';
 import Image from "next/image";
 
 export default function SocialMediaPage() {
@@ -11,8 +10,6 @@ export default function SocialMediaPage() {
     { id: 4, name: "Customer 4", logo: "/assets/images/customer/movement.png", url: "https://customer4.com" },
 
   ];
-
-  const [hoveredId, setHoveredId] = useState<number | null>(null);
 
   const handleLogoClick = (url: string) => {
     window.open(url, '_blank', 'noopener,noreferrer');
@@ -41,7 +38,7 @@ export default function SocialMediaPage() {
               Website and App Design
             </h2>
             <p className="text-sm sm:text-base text-justify lg:text-justify leading-relaxed">
-              In today's digital landscape, a compelling online presence
+              In today&apos;s digital landscape, a compelling online presence
               is essential for business success. Our website and app design
               services focus on creating visually stunning and user-friendly
               interfaces that captivate your audience and drive engagement. We

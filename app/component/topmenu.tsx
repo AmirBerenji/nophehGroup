@@ -53,25 +53,25 @@ export default function TopMenu() {
           <NavbarCollapse className="pr-4 md:pr-10">
             <div className="flex flex-col md:flex-row md:gap-8 text-center md:text-left">
               <NavbarLink
-                href="#home"
+                href="/#home"
                 active={activeSection === "home"}
               >
                 Home
               </NavbarLink>
               <NavbarLink
-                href="#about"
+                href="/#about"
                 active={activeSection === "about"}
               >
                 About
               </NavbarLink>
               <NavbarLink
-                href="#service"
+                href="/#service"
                 active={activeSection === "service"}
               >
                 Services
               </NavbarLink>
               <NavbarLink
-                href="#contactus"
+                href="/#contactus"
                 active={activeSection === "contactus"}
               >
                 Contact
