@@ -4,10 +4,10 @@ import Image from "next/image";
 export default function SocialMediaPage() {
   // Sample customer data - replace with your actual customer logos and URLs
   const customers = [
-    { id: 1, name: "Customer 1", logo: "/assets/images/customer/elrincon.png", url: "https://customer1.com" },
-    { id: 2, name: "Customer 2", logo: "/assets/images/customer/kidoohub.png", url: "https://customer2.com" },
-    { id: 3, name: "Customer 3", logo: "/assets/images/customer/maral.png", url: "https://customer3.com" },
-    { id: 4, name: "Customer 4", logo: "/assets/images/customer/movement.png", url: "https://customer4.com" },
+    { id: 1, name: "El rincon del sabor", logo: "/assets/images/customer/elrincon.png", url: "https://elrincondsabor.es/" },
+    { id: 2, name: "Kidoo Hub", logo: "/assets/images/customer/kidoohub.png", url: "https://kidoohub.com/en" },
+    { id: 3, name: "Maral Amirkian", logo: "/assets/images/customer/maral.png", url: "https://maralamirkian.com/" },
+    { id: 4, name: "Movement", logo: "/assets/images/customer/movement.png", url: "https://movement.college/" },
 
   ];
 
