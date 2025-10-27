@@ -10,7 +10,7 @@ interface ImageMasonryGalleryProps {
 
 const ImageMasonryGallery: React.FC<ImageMasonryGalleryProps> = ({
   images,
-  title = "Photo Gallery",
+  title = "",
 }) => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [visibleImages, setVisibleImages] = useState<Set<number>>(new Set());
@@ -63,7 +63,7 @@ const ImageMasonryGallery: React.FC<ImageMasonryGalleryProps> = ({
 
   return (
     <div className="min-h-screen bg-slate-50 p-8">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto pt-20">
         {title && (
           <h1 className="text-4xl font-bold text-white mb-8 text-center">
             {title}

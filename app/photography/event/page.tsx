@@ -1,52 +1,96 @@
+"use client";
+
 import { GalleryImage } from "@/app/models/galleryimage";
 import ImageMasonryGallery from "../../component/galleryimage";
+import { useState } from "react";
+
+// Extend GalleryImage to include category
+interface CategorizedGalleryImage extends GalleryImage {
+  category: string;
+}
 
 export default function Page() {
-  const eventImages: GalleryImage[] = [
+  const eventImages: CategorizedGalleryImage[] = [
     {
       src: "/assets/images/event/event1.jpg",
       alt: "Event 1",
       orientation: "landscape",
+      category: "Conference",
     },
     {
       src: "/assets/images/event/event2.jpg",
       alt: "Event 2",
       orientation: "portrait",
+      category: "Workshop",
     },
     {
       src: "/assets/images/event/event3.jpg",
       alt: "Event 3",
       orientation: "landscape",
+      category: "Conference",
     },
     {
       src: "/assets/images/event/event4.jpg",
       alt: "Event 4",
       orientation: "portrait",
+      category: "Seminar",
     },
     {
       src: "/assets/images/event/event5.jpg",
       alt: "Event 5",
       orientation: "landscape",
+      category: "Workshop",
     },
-
     {
       src: "/assets/images/event/event7.jpg",
-      alt: "Event 5",
+      alt: "Event 7",
       orientation: "landscape",
+      category: "Conference",
     },
-
     {
       src: "/assets/images/event/event8.jpg",
-      alt: "Event 5",
+      alt: "Event 8",
       orientation: "landscape",
+      category: "Seminar",
     },
-  ] as const;
+  ];
+
+  // Get unique categories
+  const categories = ["All", ...Array.from(new Set(eventImages.map(img => img.category)))];
+  
+  const [selectedCategory, setSelectedCategory] = useState<string>("All");
+
+  // Filter images based on selected category
+  const filteredImages = selectedCategory === "All" 
+    ? eventImages 
+    : eventImages.filter(img => img.category === selectedCategory);
 
   return (
     <>
-      <section className="">
-        <ImageMasonryGallery images={eventImages} />
-      </section>
+        <div className="pt-1 bg-slate-50">
+          <div className="mx-auto mt-24">
+            <div className="flex flex-wrap gap-3 justify-center">
+              {categories.map((category) => (
+          <button
+            key={category}
+            onClick={() => setSelectedCategory(category)}
+            className={`w-32 h-32 rounded-full font-medium transition-all flex items-center justify-center text-sm ${
+              selectedCategory === category
+                ? "bg-slate-200 text-gray-800 shadow-lg"
+                : "bg-salt-50 text-gray-700 hover:bg-gray-300 shadow-lg"
+            }`}
+          >
+            <span className="text-center break-words leading-tight">
+              {category}
+            </span>
+          </button>
+              ))}
+            </div>
+          </div>
+          <div className="-mt-24">
+            <ImageMasonryGallery images={filteredImages} />
+          </div>
+        </div>
     </>
   );
 }
