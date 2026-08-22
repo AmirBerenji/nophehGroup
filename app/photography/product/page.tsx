@@ -92,7 +92,13 @@ export default function Page() {
   return (
     <>
       <section className="">
-        <ImageMasonryGallery images={eventImages} />
+        <ImageMasonryGallery
+          images={eventImages}
+          title="Product Photography"
+          subtitle="Clean, detail-focused shots that make your products sell themselves."
+          backHref="/photography"
+          backLabel="Back to Photography"
+        />
       </section>
     </>
   );
