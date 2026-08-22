@@ -235,7 +235,13 @@ export default function Page() {
   return (
     <>
       <section className="">
-        <ImageMasonryGallery images={eventImages} />
+        <ImageMasonryGallery
+          images={eventImages}
+          title="Property Photography"
+          subtitle="Real estate and interior photography that highlights every space at its best."
+          backHref="/photography"
+          backLabel="Back to Photography"
+        />
       </section>
     </>
   );

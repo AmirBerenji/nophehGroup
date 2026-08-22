@@ -1,16 +1,25 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import Link from "next/link";
+import { X, ChevronLeft, ChevronRight, ArrowLeft } from "lucide-react";
 import { GalleryImage } from "../models/galleryimage";
 
 interface ImageMasonryGalleryProps {
   images: GalleryImage[];
   title?: string;
+  subtitle?: string;
+  backHref?: string;
+  backLabel?: string;
+  children?: React.ReactNode;
 }
 
 const ImageMasonryGallery: React.FC<ImageMasonryGalleryProps> = ({
   images,
   title = "",
+  subtitle,
+  backHref,
+  backLabel = "Back",
+  children,
 }) => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [visibleImages, setVisibleImages] = useState<Set<number>>(new Set());
@@ -62,13 +71,36 @@ const ImageMasonryGallery: React.FC<ImageMasonryGalleryProps> = ({
   }, [selectedIndex]);
 
   return (
-    <div className="min-h-screen bg-slate-50 p-8">
-      <div className="max-w-7xl mx-auto pt-20">
-        {title && (
-          <h1 className="text-4xl font-bold text-white mb-8 text-center">
-            {title}
-          </h1>
+    <div className="min-h-screen bg-slate-50 px-4 sm:px-8 pb-16 pt-28 sm:pt-32">
+      <div className="max-w-7xl mx-auto">
+        {backHref && (
+          <Link
+            href={backHref}
+            className="inline-flex items-center gap-2 text-sm font-medium text-gray-500 transition-colors hover:text-[#209EBB]"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            {backLabel}
+          </Link>
         )}
+
+        {title && (
+          <div className={backHref ? "mt-4 mb-10" : "mb-10"}>
+            <h1 className="text-3xl sm:text-4xl font-bold text-[#023047]">
+              {title}
+            </h1>
+            <div className="mt-3 h-1 w-16 rounded-full bg-[#209EBB]"></div>
+            {subtitle && (
+              <p className="mt-4 max-w-2xl text-gray-600 leading-relaxed">
+                {subtitle}
+              </p>
+            )}
+            <p className="mt-2 text-sm text-gray-400">
+              {images.length} photo{images.length === 1 ? "" : "s"}
+            </p>
+          </div>
+        )}
+
+        {children}
 
         {/* Masonry Grid */}
         <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 space-y-4">

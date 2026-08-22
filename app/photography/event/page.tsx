@@ -67,30 +67,29 @@ export default function Page() {
 
   return (
     <>
-        <div className="pt-1 bg-slate-50">
-          <div className="mx-auto mt-24">
-            <div className="flex flex-wrap gap-3 justify-center">
-              {categories.map((category) => (
-          <button
-            key={category}
-            onClick={() => setSelectedCategory(category)}
-            className={`w-32 h-32 rounded-full font-medium transition-all flex items-center justify-center text-sm ${
-              selectedCategory === category
-                ? "bg-slate-200 text-gray-800 shadow-lg"
-                : "bg-salt-50 text-gray-700 hover:bg-gray-300 shadow-lg"
-            }`}
-          >
-            <span className="text-center break-words leading-tight">
+      <ImageMasonryGallery
+        images={filteredImages}
+        title="Events Photography"
+        subtitle="Candid, high-energy coverage that captures the moments that matter."
+        backHref="/photography"
+        backLabel="Back to Photography"
+      >
+        <div className="mb-10 flex flex-wrap gap-3">
+          {categories.map((category) => (
+            <button
+              key={category}
+              onClick={() => setSelectedCategory(category)}
+              className={`rounded-full px-5 py-2 text-sm font-medium transition-all duration-300 ${
+                selectedCategory === category
+                  ? "bg-[#209EBB] text-white shadow-md"
+                  : "border border-gray-200 bg-white text-gray-600 hover:border-[#209EBB]/50 hover:text-[#209EBB]"
+              }`}
+            >
               {category}
-            </span>
-          </button>
-              ))}
-            </div>
-          </div>
-          <div className="-mt-24">
-            <ImageMasonryGallery images={filteredImages} />
-          </div>
+            </button>
+          ))}
         </div>
+      </ImageMasonryGallery>
     </>
   );
 }

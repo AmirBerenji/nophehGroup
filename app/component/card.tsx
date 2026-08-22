@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Camera, Code2, Megaphone, ArrowRight } from "lucide-react";
 
 export default function Card() {
   const data = [
@@ -9,8 +10,11 @@ export default function Card() {
       description:
         "Transform your brand with stunning visuals that tell your story.",
       linke: "/photography",
+      icon: Camera,
       gradient: "from-[#209EBB]/20 to-[#209EBB]/20",
       accent: "bg-[#209EBB]",
+      accentText: "text-[#209EBB]",
+      titleHoverClass: "group-hover:text-[#209EBB]",
     },
     {
       img: "/assets/websitedesign.jpg?w=800&h=600&fit=crop",
@@ -18,8 +22,11 @@ export default function Card() {
       description:
         "Turning your vision into a website that’s as powerful as it is beautiful.",
       linke: "/webdesign",
+      icon: Code2,
       gradient: "from-green-400/20 to-green-400/20",
       accent: "bg-green-400",
+      accentText: "text-green-500",
+      titleHoverClass: "group-hover:text-green-500",
     },
     {
       img: "/assets/marketing.jpg?w=800&h=600&fit=crop",
@@ -27,8 +34,11 @@ export default function Card() {
       description:
         "Unlock your brand's potential with tailored marketing strategies.",
       linke: "/marketing",
+      icon: Megaphone,
       gradient: "from-[#fc8500]/20 to-[#fc8500]/20",
       accent: "bg-[#fc8500]",
+      accentText: "text-[#fc8500]",
+      titleHoverClass: "group-hover:text-[#fc8500]",
     },
   ];
 
@@ -82,25 +92,22 @@ export default function Card() {
 
                 {/* Content */}
                 <div className="p-6">
+                  {/* Icon */}
+                  <span
+                    className={`flex h-9 w-9 items-center justify-center rounded-lg bg-slate-50 mb-3 ${item.accentText}`}
+                  >
+                    <item.icon className="w-5 h-5" />
+                  </span>
+
                   <div className="flex items-start justify-between mb-3">
-                    <h3 className="text-2xl font-bold text-[#023047] group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-[#023047] group-hover:to-blue-600 transition-all duration-300">
+                    <h3
+                      className={`text-2xl font-bold text-[#023047] transition-colors duration-300 ${item.titleHoverClass}`}
+                    >
                       {item.title}
                     </h3>
                     {/* Arrow Icon */}
                     <div className="mt-1 opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition-all duration-300">
-                      <svg
-                        className="w-6 h-6 text-[#023047]"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M17 8l4 4m0 0l-4 4m4-4H3"
-                        />
-                      </svg>
+                      <ArrowRight className="w-6 h-6 text-[#023047]" />
                     </div>
                   </div>
 
@@ -109,7 +116,9 @@ export default function Card() {
                   </p>
 
                   {/* Bottom Accent Line */}
-                  <div className="mt-6 w-0 h-0.5 bg-gradient-to-r from-purple-500 via-blue-500 to-orange-500 group-hover:w-full transition-all duration-500"></div>
+                  <div
+                    className={`mt-6 w-0 h-0.5 ${item.accent} group-hover:w-full transition-all duration-500`}
+                  ></div>
                 </div>
               </div>
             </Link>
