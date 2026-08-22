@@ -7,7 +7,8 @@ export default function SocialMediaPage() {
     { id: 1, name: "El rincon del sabor", logo: "/assets/images/customer/elrincon.png", url: "https://elrincondsabor.es/" },
     { id: 2, name: "Kidoo Hub", logo: "/assets/images/customer/kidoohub.png", url: "https://kidoohub.com/en" },
     { id: 3, name: "Maral Amirkian", logo: "/assets/images/customer/maral.png", url: "https://maralamirkian.com/" },
-    { id: 4, name: "Movement", logo: "/assets/images/customer/movement.png", url: "https://movement.college/" },
+    { id: 4, name: "Findo hub", logo: "/assets/images/customer/findo.png", url: "https://findohub.com/" },
+    { id: 5, name: "Movement", logo: "/assets/images/customer/movement.png", url: "https://movement.college/" },
 
   ];
 
