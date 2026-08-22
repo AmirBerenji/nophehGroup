@@ -12,7 +12,7 @@ export default function SocialMediaPage() {
     { id: 4, name: "Findo hub", logo: "/assets/images/customer/findo.png", url: "https://findohub.com/" },
     { id: 5, name: "Pety hub", logo: "/assets/images/customer/petyhub.png", url: "https://petyhub.com/" },
     { id: 6, name: "AURELIE", logo: "/assets/images/customer/aurelie.png", url: "https://bridal-inky.vercel.app/" },
-    { id: 7, name: "Movement", logo: "/assets/images/customer/movement.png", url: "https://movement.college/" },
+    { id: 7, name: "Movement", logo: "/assets/images/customer/movement.png", url: "https://movement.college/crm" },
   ];
 
   const features = [
