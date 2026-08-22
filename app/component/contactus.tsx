@@ -8,7 +8,7 @@ export default function ContactUs() {
       className="w-full bg-gray-100 py-16 sm:py-20 px-4 sm:px-6 lg:px-12"
     >
       <div className="max-w-7xl mx-auto bg-white rounded-md shadow-lg p-8 md:p-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center pl-5 pr-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center md:pl-5 md:pr-10">
           {/* Left Column - Description */}
           <div>
             <h2 className="text-xs sm:text-sm font-semibold uppercase tracking-widest text-[#209EBB]">
@@ -17,7 +17,7 @@ export default function ContactUs() {
             <h3 className="text-2xl font-bold text-gray-800 mt-2 mb-4">
               Get in Touch
             </h3>
-            <p className="text-gray-600 text-lg leading-relaxed text-justify">
+            <p className="text-gray-600 text-lg leading-relaxed text-left">
               At Nofeh, we&#39;re always here to help with your creative and
               business needs. Whether you&#39;re looking for photography,
               videography, branding, media consultation, or professional

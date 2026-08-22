@@ -54,7 +54,7 @@ export default function SocialMediaPage() {
               <span className="text-green-500">customers</span>
             </h1>
 
-            <p className="mt-6 text-base sm:text-lg text-gray-600 leading-relaxed max-w-xl mx-auto lg:mx-0 text-justify lg:text-left">
+            <p className="mt-6 text-base sm:text-lg text-gray-600 leading-relaxed max-w-xl mx-auto lg:mx-0 text-left">
               We blend creativity with functionality to create visually
               stunning, user-friendly websites and apps that captivate your
               audience and drive engagement. Every element is tailored to
@@ -124,14 +124,14 @@ export default function SocialMediaPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8">
+          <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
             {customers.map((customer) => (
               <button
                 key={customer.id}
                 type="button"
                 onClick={() => handleLogoClick(customer.url)}
                 aria-label={`Visit ${customer.name}`}
-                className="group flex flex-col items-center gap-3"
+                className="group flex w-28 sm:w-32 flex-col items-center gap-3"
               >
                 <div className="flex h-24 w-24 sm:h-28 sm:w-28 items-center justify-center rounded-2xl border border-slate-100 bg-slate-50 p-4 transition-all duration-300 group-hover:-translate-y-1 group-hover:border-green-400/50 group-hover:shadow-lg">
                   <Image

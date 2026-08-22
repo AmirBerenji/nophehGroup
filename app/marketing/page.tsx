@@ -61,7 +61,7 @@ export default function MarketinPage() {
               <span className="text-[#fc8500]">customers</span>
             </h1>
 
-            <p className="mt-6 text-base sm:text-lg text-gray-600 leading-relaxed max-w-xl mx-auto lg:mx-0 text-justify lg:text-left">
+            <p className="mt-6 text-base sm:text-lg text-gray-600 leading-relaxed max-w-xl mx-auto lg:mx-0 text-left">
               We analyze your brand&apos;s strengths and weaknesses to build a
               marketing strategy that actually fits your business. From
               identifying your ideal audience to optimizing every channel,

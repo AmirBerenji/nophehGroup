@@ -62,7 +62,7 @@ export default function PhotographyPage() {
               <span className="text-[#209EBB]">unforgettable</span>
             </h1>
 
-            <p className="mt-6 text-base sm:text-lg text-gray-600 leading-relaxed max-w-xl mx-auto lg:mx-0 text-justify lg:text-left">
+            <p className="mt-6 text-base sm:text-lg text-gray-600 leading-relaxed max-w-xl mx-auto lg:mx-0 text-left">
               Our team specializes in brand, event, real estate, interior
               design, food, and product photography. We capture the true
               essence of your brand, creating images that build trust and

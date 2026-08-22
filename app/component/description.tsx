@@ -12,7 +12,7 @@ export default function Description() {
           <h3 className="mt-2 font-bold text-xl md:text-2xl">
             Captivate your audience
           </h3>
-          <p className="text-justify text-base md:text-lg mt-4 ">
+          <p className="text-left text-base md:text-lg mt-4 ">
             Nofeh, based in Yerevan, AM, transforms brands through powerful
             imagery and strategic marketing. Our professional photography
             services showcase your unique story, while our tailored marketing
