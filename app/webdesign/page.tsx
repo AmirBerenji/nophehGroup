@@ -10,7 +10,9 @@ export default function SocialMediaPage() {
     { id: 2, name: "Kidoo Hub", logo: "/assets/images/customer/kidoohub.png", url: "https://kidoohub.com/en" },
     { id: 3, name: "Maral Amirkian", logo: "/assets/images/customer/maral.png", url: "https://maralamirkian.com/" },
     { id: 4, name: "Findo hub", logo: "/assets/images/customer/findo.png", url: "https://findohub.com/" },
-    { id: 5, name: "Movement", logo: "/assets/images/customer/movement.png", url: "https://movement.college/" },
+    { id: 5, name: "Pety hub", logo: "/assets/images/customer/petyhub.png", url: "https://petyhub.com/" },
+    { id: 6, name: "AURELIE", logo: "/assets/images/customer/aurelie.png", url: "https://bridal-inky.vercel.app/" },
+    { id: 7, name: "Movement", logo: "/assets/images/customer/movement.png", url: "https://movement.college/" },
   ];
 
   const features = [
