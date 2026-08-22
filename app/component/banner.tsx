@@ -12,14 +12,17 @@ export default function BannerMainPage() {
           Creative &amp; Digital Studio &middot; Yerevan, Armenia
         </span>
 
-        <h2 className="mt-6 font-bold text-4xl md:text-6xl lg:text-7xl">
+        <h1 className="mt-6 font-bold text-4xl md:text-6xl lg:text-7xl">
           <span className="ml-3 text-4xl md:text-6xl lg:text-7xl text-[#209EBB]">
             NOFEH
           </span>
           <span className="ml-2 text-xl md:text-2xl lg:text-4xl text-[#fc8500]">
             Code Studio
           </span>
-        </h2>
+          <span className="sr-only">
+            {" "}&mdash; Web &amp; App Design, Photography and Marketing Agency in Yerevan, Armenia
+          </span>
+        </h1>
         <p className="mt-5 text-xl md:text-2xl lg:text-3xl text-[#fc8500]">
           Where code feels and images speak
         </p>

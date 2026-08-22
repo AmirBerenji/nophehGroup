@@ -1,5 +1,21 @@
+import type { Metadata } from "next";
 import ImageMasonryGallery from "@/app/component/galleryimage";
 import { GalleryImage } from "@/app/models/galleryimage";
+
+export const metadata: Metadata = {
+  title: "Property Photography",
+  description:
+    "Real estate and interior photography from Nofeh Code Studio that highlights every space at its best.",
+  alternates: {
+    canonical: "https://www.nofehcodestudio.com/photography/property",
+  },
+  openGraph: {
+    title: "Property Photography | Nofeh Code Studio",
+    description:
+      "Real estate and interior photography that highlights every space at its best.",
+    url: "https://www.nofehcodestudio.com/photography/property",
+  },
+};
 
 export default function Page() {
   const eventImages: GalleryImage[] = [
