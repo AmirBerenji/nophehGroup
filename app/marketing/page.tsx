@@ -1,6 +1,22 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Megaphone, Target, CheckCircle2, ArrowRight, Search, BarChart3, Repeat } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Marketing Strategy",
+  description:
+    "Marketing strategy consultation from Nofeh Code Studio — audience research, brand positioning, and data-driven campaign strategy that turns attention into customers.",
+  alternates: {
+    canonical: "https://www.nofehcodestudio.com/marketing",
+  },
+  openGraph: {
+    title: "Marketing Strategy | Nofeh Code Studio",
+    description:
+      "Audience research, brand positioning, and data-driven campaign strategy that turns attention into customers.",
+    url: "https://www.nofehcodestudio.com/marketing",
+  },
+};
 
 export default function MarketinPage() {
   const features = [

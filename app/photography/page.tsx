@@ -1,6 +1,22 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Camera, CheckCircle2, ArrowRight, MapPin, PartyPopper } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Brand Photography",
+  description:
+    "Professional brand, product, real estate, and event photography from Nofeh Code Studio — images that build trust and make your brand unforgettable.",
+  alternates: {
+    canonical: "https://www.nofehcodestudio.com/photography",
+  },
+  openGraph: {
+    title: "Brand Photography | Nofeh Code Studio",
+    description:
+      "Professional brand, product, real estate, and event photography that build trust and make your brand unforgettable.",
+    url: "https://www.nofehcodestudio.com/photography",
+  },
+};
 
 export default function PhotographyPage() {
   const features = [

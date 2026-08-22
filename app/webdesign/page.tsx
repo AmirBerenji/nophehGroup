@@ -1,9 +1,24 @@
-"use client"
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Code2, CheckCircle2, ArrowRight } from "lucide-react";
 
-export default function SocialMediaPage() {
+export const metadata: Metadata = {
+  title: "Website & App Design",
+  description:
+    "Custom website and mobile app design services from Nofeh Code Studio — responsive, SEO-friendly, user-focused designs that turn visitors into customers.",
+  alternates: {
+    canonical: "https://www.nofehcodestudio.com/webdesign",
+  },
+  openGraph: {
+    title: "Website & App Design | Nofeh Code Studio",
+    description:
+      "Custom website and mobile app design services — responsive, SEO-friendly, user-focused designs that turn visitors into customers.",
+    url: "https://www.nofehcodestudio.com/webdesign",
+  },
+};
+
+export default function WebDesignPage() {
   // Sample customer data - replace with your actual customer logos and URLs
   const customers = [
     { id: 1, name: "El rincon del sabor", logo: "/assets/images/customer/elrincon.png", url: "https://elrincondsabor.es/" },
@@ -21,10 +36,6 @@ export default function SocialMediaPage() {
     "Custom UI/UX, not templates",
     "Ongoing support & maintenance",
   ];
-
-  const handleLogoClick = (url: string) => {
-    window.open(url, "_blank", "noopener,noreferrer");
-  };
 
   return (
     <>
@@ -128,10 +139,11 @@ export default function SocialMediaPage() {
 
           <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
             {customers.map((customer) => (
-              <button
+              <a
                 key={customer.id}
-                type="button"
-                onClick={() => handleLogoClick(customer.url)}
+                href={customer.url}
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label={`Visit ${customer.name}`}
                 className="group flex w-28 sm:w-32 flex-col items-center gap-3"
               >
@@ -147,7 +159,7 @@ export default function SocialMediaPage() {
                 <span className="text-xs text-gray-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   {customer.name}
                 </span>
-              </button>
+              </a>
             ))}
           </div>
         </div>
