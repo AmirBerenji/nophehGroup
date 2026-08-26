@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description:
     "Real estate and interior photography from Nofeh Code Studio that highlights every space at its best.",
   alternates: {
-    canonical: "https://www.nofehcodestudio.com/photography/property",
+    canonical: "https://www.nofehstudio.com/photography/property",
   },
   openGraph: {
     title: "Property Photography | Nofeh Code Studio",
     description:
       "Real estate and interior photography that highlights every space at its best.",
-    url: "https://www.nofehcodestudio.com/photography/property",
+    url: "https://www.nofehstudio.com/photography/property",
   },
 };
 

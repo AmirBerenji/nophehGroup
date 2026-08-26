@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   description:
     "Professional brand, product, real estate, and event photography from Nofeh Code Studio — images that build trust and make your brand unforgettable.",
   alternates: {
-    canonical: "https://www.nofehcodestudio.com/photography",
+    canonical: "https://www.nofehstudio.com/photography",
   },
   openGraph: {
     title: "Brand Photography | Nofeh Code Studio",
     description:
       "Professional brand, product, real estate, and event photography that build trust and make your brand unforgettable.",
-    url: "https://www.nofehcodestudio.com/photography",
+    url: "https://www.nofehstudio.com/photography",
   },
 };
 

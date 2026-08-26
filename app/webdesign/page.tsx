@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   description:
     "Custom website and mobile app design services from Nofeh Code Studio — responsive, SEO-friendly, user-focused designs that turn visitors into customers.",
   alternates: {
-    canonical: "https://www.nofehcodestudio.com/webdesign",
+    canonical: "https://www.nofehstudio.com/webdesign",
   },
   openGraph: {
     title: "Website & App Design | Nofeh Code Studio",
     description:
       "Custom website and mobile app design services — responsive, SEO-friendly, user-focused designs that turn visitors into customers.",
-    url: "https://www.nofehcodestudio.com/webdesign",
+    url: "https://www.nofehstudio.com/webdesign",
   },
 };
 
