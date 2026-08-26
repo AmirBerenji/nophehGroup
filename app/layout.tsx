@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://www.nofehcodestudio.com"), // Replace with your actual domain
+  metadataBase: new URL("https://www.nofehstudio.com"),
   alternates: {
     canonical: "/",
   },
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
       "Nofeh Code Studio | Photography, Web Design, Mobile Apps & Marketing",
     description:
       "Transform your digital presence with professional photography, custom web design, mobile app development, and digital marketing services.",
-    url: "https://www.nofehcodestudio.com",
+    url: "https://www.nofehstudio.com",
     siteName: "Nofeh Code Studio",
     images: [
       {
@@ -114,8 +114,8 @@ export default function RootLayout({
         "@context": "https://schema.org",
         "@type": "Organization",
         name: "Nofeh Code Studio",
-        url: "https://www.nofehcodestudio.com",
-        logo: "https://www.nofehcodestudio.com/logo.png",
+        url: "https://www.nofehstudio.com",
+        logo: "https://www.nofehstudio.com/assets/logo.png",
         sameAs: [
           "https://www.facebook.com/share/1CoNkKtDE5/",
           "https://www.instagram.com/nofeh_code_studio/",

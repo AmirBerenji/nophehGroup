@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   description:
     "Marketing strategy consultation from Nofeh Code Studio — audience research, brand positioning, and data-driven campaign strategy that turns attention into customers.",
   alternates: {
-    canonical: "https://www.nofehcodestudio.com/marketing",
+    canonical: "https://www.nofehstudio.com/marketing",
   },
   openGraph: {
     title: "Marketing Strategy | Nofeh Code Studio",
     description:
       "Audience research, brand positioning, and data-driven campaign strategy that turns attention into customers.",
-    url: "https://www.nofehcodestudio.com/marketing",
+    url: "https://www.nofehstudio.com/marketing",
   },
 };
 

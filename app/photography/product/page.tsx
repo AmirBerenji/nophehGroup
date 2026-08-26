@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description:
     "Clean, detail-focused product photography from Nofeh Code Studio that makes your products sell themselves.",
   alternates: {
-    canonical: "https://www.nofehcodestudio.com/photography/product",
+    canonical: "https://www.nofehstudio.com/photography/product",
   },
   openGraph: {
     title: "Product Photography | Nofeh Code Studio",
     description:
       "Clean, detail-focused product photography that makes your products sell themselves.",
-    url: "https://www.nofehcodestudio.com/photography/product",
+    url: "https://www.nofehstudio.com/photography/product",
   },
 };
 

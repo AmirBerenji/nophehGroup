@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   description:
     "Candid, high-energy event photography from Nofeh Code Studio that captures the moments that matter — conferences, workshops, and seminars.",
   alternates: {
-    canonical: "https://www.nofehcodestudio.com/photography/event",
+    canonical: "https://www.nofehstudio.com/photography/event",
   },
   openGraph: {
     title: "Events Photography | Nofeh Code Studio",
     description:
       "Candid, high-energy event photography that captures the moments that matter.",
-    url: "https://www.nofehcodestudio.com/photography/event",
+    url: "https://www.nofehstudio.com/photography/event",
   },
 };
 
