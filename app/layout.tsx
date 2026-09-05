@@ -3,8 +3,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
-import TopMenu from "./component/topmenu";
-import Footer from "./component/footer";
+import ChromeGate from "./component/chromegate";
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -146,9 +145,7 @@ export default function RootLayout({
             gtag('config', 'G-67SXLCJ81Z');
           `}
         </Script>
-        <TopMenu />
-        {children}
-        <Footer />
+        <ChromeGate>{children}</ChromeGate>
         <Analytics />
       </body>
     </html>
